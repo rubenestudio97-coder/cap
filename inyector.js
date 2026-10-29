@@ -2,8 +2,8 @@
 // @name         Inyector Maestro V32.12 (Revisión Completa + 4 Modos Exactos)
 // @namespace    http://tampermonkey.net/
 // @version      32.12
-// @description  Descarga desde GitHub (mrc-dza/cap) o local. Panel rectangular, botones píldora, escudo anti-foco/scroll y 4 modos (No iniciados, Iniciados <100, Sin corregir activo, Todos).
-// @author       Marcos
+// @description  Descarga desde GitHub (rubenestudio97-coder/cap) o local. Panel rectangular, botones píldora, escudo anti-foco/scroll y 4 modos (No iniciados, Iniciados <100, Sin corregir activo, Todos).
+// @author       mercz d
 // @match        https://cursosabiertos.usfx.bo/materias/*/capitulos/*
 // @grant        none
 // @run-at       document-end
@@ -17,7 +17,7 @@
     // =========================================================================
     // CONFIGURACIÓN DEL REPOSITORIO GITHUB
     // =========================================================================
-    const GITHUB_USER   = 'mrc-dza';
+    const GITHUB_USER   = 'rubenestudio97-coder';
     const GITHUB_REPO   = 'cap';
     const GITHUB_BRANCH = 'main';
 
