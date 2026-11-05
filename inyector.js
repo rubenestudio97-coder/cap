@@ -717,28 +717,25 @@
     });
     btnCerrar.addEventListener('click', limpiarRastro);
 
-    // Pestañita casi transparente
+    // Pestañita totalmente transparente
     const btnPestana = document.createElement('button');
     btnPestana.textContent = '‹';
     btnPestana.title = 'Mostrar / ocultar panel';
     Object.assign(btnPestana.style, {
-        width: '16px', height: '36px', background: '#0f172a', color: '#ffffff',
-        border: '1px solid rgba(255,255,255,0.2)', borderRight: 'none',
+        width: '16px', height: '36px', background: 'transparent', color: 'transparent',
+        border: 'none', 
         borderRadius: '0px', cursor: 'pointer', fontSize: '14px', fontWeight: 'bold',
         display: 'flex', alignItems: 'center', justifyContent: 'center',
-        opacity: '0.005', transition: 'opacity 0 ease, background 0 ease',
+        opacity: '0',
         padding: '0', userSelect: 'none'
     });
 
     let menuAbierto = false;
-    btnPestana.addEventListener('mouseenter', () => { btnPestana.style.opacity = '0.85'; });
-    btnPestana.addEventListener('mouseleave', () => { btnPestana.style.opacity = menuAbierto ? '0.75' : '0.22'; });
 
     btnPestana.addEventListener('click', () => {
         menuAbierto = !menuAbierto;
         panelMenu.style.display = menuAbierto ? 'flex' : 'none';
         btnPestana.textContent = menuAbierto ? '›' : '‹';
-        btnPestana.style.opacity = menuAbierto ? '0.75' : '0.22';
     });
 
     filaControles.appendChild(selectModo);
