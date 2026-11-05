@@ -726,7 +726,7 @@
         border: '1px solid rgba(255,255,255,0.2)', borderRight: 'none',
         borderRadius: '0px', cursor: 'pointer', fontSize: '14px', fontWeight: 'bold',
         display: 'flex', alignItems: 'center', justifyContent: 'center',
-        opacity: '0.005', transition: 'opacity 0.002s ease, background 0.2s ease',
+        opacity: '0.005', transition: 'opacity 0 ease, background 0 ease',
         padding: '0', userSelect: 'none'
     });
 
